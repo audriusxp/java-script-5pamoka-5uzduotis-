@@ -23,7 +23,7 @@ function isaugotiDidesnius10(testinis){
 }
 
 function daugiau(x){
-    return x > 10;
+    return x > x;
 }
 
 function suskaiciuotiDidesniusNei10(testinis){
@@ -32,16 +32,9 @@ function suskaiciuotiDidesniusNei10(testinis){
         if (daugiau(testinis[i])){
          
           suma += 1;
-
-
-            
-            
-        }
-        
-       
-       
-    }
     
-
+        }
+           
+    }
     return suma;   
 }
