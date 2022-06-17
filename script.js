@@ -3,6 +3,7 @@ window.onload = function() {
     console.log(testinis);
     
     console.log(isaugotiDidesnius10(testinis));
+    console.log(suskaiciuotiDidesniusNei10(testinis));
     
     
     
@@ -12,7 +13,7 @@ function isaugotiDidesnius10(testinis){
    
     for (let i = 0; i <testinis.length; i ++) {
         if (daugiau(testinis[i])){
-            console.log("f");
+            
             rezultatas.push(testinis[i]);
         }
        
@@ -23,4 +24,24 @@ function isaugotiDidesnius10(testinis){
 
 function daugiau(x){
     return x > 10;
+}
+
+function suskaiciuotiDidesniusNei10(testinis){
+    let suma = 0;
+    for (let i = 0; i <testinis.length; i ++) {
+        if (daugiau(testinis[i])){
+         
+          suma += 1;
+
+
+            
+            
+        }
+        
+       
+       
+    }
+    
+
+    return suma;   
 }
